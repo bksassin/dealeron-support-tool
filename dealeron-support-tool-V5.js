@@ -1,15 +1,3 @@
-// ==UserScript==
-// @name        DealerOn Support Tool V4.9 TEST (Left Side) NEW
-// @namespace    DealerOn
-// @version      4.8
-// @description  Floating support menu with quick access to DealerOn functions and troubleshooting tools
-// @author       Brandon Sassin
-// @match        *://*/*
-// @exclude      *://dealeron.lightning.force.com/*
-// @exclude      *://apps.sincrotools.com/*
-// @exclude      *://apps.dealeron.com/*
-// @grant        none
-// ==/UserScript==
 
 (function() {
   'use strict';
@@ -2796,3 +2784,4 @@ cacheToolsSubmenu.appendChild(resetCmsCacheItem);
   floatingButton.style.display = 'none'; // Hide the button initially
   sideTab.style.display = 'flex'; // Start with the side tab visible
 })();
+
