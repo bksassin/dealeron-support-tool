@@ -728,8 +728,14 @@ menu.appendChild(pageToCmsItem);
   });
   menu.appendChild(dealerIdToWebsiteItem);
 
-// manage apps
-
+// Menu item 5: Manage AppStore
+const manageAppStoreItem = createMenuItem('📱 Manage Apps', function() {
+    const dealerId = window.DlronGlobal_DealerId || prompt("Enter Dealer ID:");
+    if (dealerId) {
+        window.open("https://apps.sincrotools.com/manage-installations?query=" + dealerId, "_blank");
+    }
+});
+menu.appendChild(manageAppStoreItem);
 
 // Menu item 5: Edit Price Stack
 const editPriceStackItem = createMenuItem('💰 Edit Price Stack', function() {
@@ -2777,5 +2783,6 @@ cacheToolsSubmenu.appendChild(resetCmsCacheItem);
   floatingButton.style.display = 'none'; // Hide the button initially
   sideTab.style.display = 'flex'; // Start with the side tab visible
 })();
+
 
 
